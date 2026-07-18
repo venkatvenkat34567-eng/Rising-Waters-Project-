@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Flood Risk</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>✅ No Flood Expected</h1>
+
+    <p>
+        The machine learning model predicts that flood risk is currently low.
+        Continue monitoring weather updates for future changes.
+    </p>
+
+    <a href="/Predict">
+        <button>Predict Again</button>
+    </a>
+
+</div>
+
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+
+</body>
+</html>

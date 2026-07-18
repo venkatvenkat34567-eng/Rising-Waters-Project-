@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rising Waters - Home</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+
+<body>
+
+<div class="hero">
+
+    <h1>🌊 Rising Waters</h1>
+
+    <h2>AI Based Flood Prediction System</h2>
+
+    <p>
+        Predict flood risks using Machine Learning and weather parameters.
+        This application helps users estimate possible flood conditions
+        from environmental data.
+    </p>
+
+    <a href="/Predict">
+        <button class="btn">
+            Predict Flood
+        </button>
+    </a>
+
+</div>
+
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+
+</body>
+</html>

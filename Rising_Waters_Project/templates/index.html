@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌊 Flood Prediction System</h1>
+
+    <form action="/predict" method="POST">
+
+        <input type="number" step="any" name="Temp" placeholder="Temperature" required>
+
+        <input type="number" step="any" name="Humidity" placeholder="Humidity" required>
+
+        <input type="number" step="any" name="CloudCover" placeholder="Cloud Cover" required>
+
+        <input type="number" step="any" name="Annual" placeholder="Annual Rainfall" required>
+
+        <input type="number" step="any" name="JanFeb" placeholder="Jan-Feb Rainfall" required>
+
+        <input type="number" step="any" name="MarMay" placeholder="Mar-May Rainfall" required>
+
+        <input type="number" step="any" name="JunSep" placeholder="Jun-Sep Rainfall" required>
+
+        <input type="number" step="any" name="OctDec" placeholder="Oct-Dec Rainfall" required>
+
+        <input type="number" step="any" name="AvgJune" placeholder="Average June Rainfall" required>
+
+        <input type="number" step="any" name="Sub" placeholder="Subdivision Code" required>
+
+        <button type="submit">Predict Flood</button>
+
+    </form>
+
+</div>
+
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+
+</body>
+</html>
