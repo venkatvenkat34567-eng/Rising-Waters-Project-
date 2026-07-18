@@ -1,28 +1,50 @@
 # 🌊 Rising Waters Project
 
-## AI Based Flood Prediction System
+## Machine Learning Based Flood Prediction System
 
 ### Description
-Rising Waters is an AI-based flood prediction system developed using Machine Learning and Flask. The application predicts the possibility of floods based on environmental parameters.
+Rising Waters is a Machine Learning based Flood Prediction System developed using Python and Flask. The system predicts the possibility of floods based on environmental parameters using a trained ML model.
 
 ### Technologies Used
 - Python
 - Flask
-- Machine Learning
+- Machine Learning (Scikit-learn)
 - HTML
 - CSS
 - JavaScript
-- Scikit-learn
+- XGBoost
+- OpenPyXL
+
+### Features
+- Predicts flood probability
+- User-friendly web interface
+- Fast prediction using trained ML model
+- Responsive design
 
 ### Project Structure
-- model/
-- static/
-- templates/
-- app.py
-- requirements.txt
+```
+Rising_Waters_Project/
+├── model/
+├── static/
+├── templates/
+├── app.py
+├── predict.py
+├── train_model.py
+├── requirements.txt
+└── flood dataset.xlsx
+```
 
-### How to Run
+### Installation
+
 ```bash
 pip install -r requirements.txt
 python app.py
+```
+
+### Output
+
+Open the browser and visit:
+
+```
+http://127.0.0.1:5000
 ```
